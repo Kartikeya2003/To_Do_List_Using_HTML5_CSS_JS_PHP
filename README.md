@@ -1,5 +1,5 @@
 This Repository consist of a TO-DO list.
-This prooject require a knowledge of :-
+This project require a knowledge of :-
   -HTML, CSS for the Frontend of the Project 
   -PHP for the backend of the project.
 MySQL is required for storing the Data
