@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>TO DO LIST</title>
+        <link rel="stylesheet" href="style.css" >
+        </head>
+
+    </head>
+    <body>
+        <h1>My TO DO List!</h1>
+        <br><br>
+        <h3>Enter Your TO DO Activities</h3> 
+        <br>
+        <form action="db.php" method="post" onsubmit= return toCheck()>
+            Enter Task <input type="text" id="act" name="Task"  >
+            <br><br>
+            Set Due Date (DD/MM/YYYY) <input type="date" id="due" name="Date" >
+            <br><br>
+            Status :<br>
+            Completed<input type="radio"  id="demo" name="Status" value="1">
+            <br><br>
+            Pending<input type="radio" name="Status" id="demo" value="2">
+            <br><br>
+            Inprogress<input type="radio" name="Status" id="demo" value="3">
+            <br><br>
+            <button onsubmit= return toCheck()>Submit</button>
+        </form>
+   
+    <script>
+        function toCheck(){
+            var task= document.getElementById("act").value()
+            if(task==""){
+                alert("Please Enter Task");
+            }
+                       
+        }
+
+        </script>
+    </body>
+</html>
